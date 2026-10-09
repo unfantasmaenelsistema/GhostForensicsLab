@@ -1,0 +1,6 @@
+{
+  "name": "GhostForensics Lab",
+  "description": "Simulador interactivo de investigación forense digital (DFIR) para Ghost Academy. Práctica de análisis de timeline, registro de Windows, event logs, memoria RAM, tráfico de red, CloudTrail y reconstrucción de la cadena de ataque MITRE ATT&CK.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

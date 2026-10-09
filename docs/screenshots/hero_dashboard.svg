@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e14" />
+      <stop offset="50%" stop-color="#0d1117" />
+      <stop offset="100%" stop-color="#161b22" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f0883e" />
+      <stop offset="100%" stop-color="#58a6ff" />
+    </linearGradient>
+    <linearGradient id="cardGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#21262d" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#161b22" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="timelineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f85149" />
+      <stop offset="25%" stop-color="#d29922" />
+      <stop offset="55%" stop-color="#f0883e" />
+      <stop offset="85%" stop-color="#3fb950" />
+      <stop offset="100%" stop-color="#a371f7" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)" />
+
+  <!-- Subtle grid lines -->
+  <g stroke="#30363d" stroke-width="0.5" opacity="0.3">
+    <line x1="0" y1="70" x2="1200" y2="70" />
+    <line x1="0" y1="140" x2="1200" y2="140" />
+    <line x1="0" y1="210" x2="1200" y2="210" />
+    <line x1="0" y1="280" x2="1200" y2="280" />
+    <line x1="0" y1="350" x2="1200" y2="350" />
+    <line x1="0" y1="420" x2="1200" y2="420" />
+    <line x1="0" y1="490" x2="1200" y2="490" />
+    <line x1="0" y1="560" x2="1200" y2="560" />
+  </g>
+
+  <!-- Header Bar -->
+  <rect x="30" y="24" width="1140" height="56" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <circle cx="58" cy="52" r="6" fill="#f85149" />
+  <circle cx="78" cy="52" r="6" fill="#d29922" />
+  <circle cx="98" cy="52" r="6" fill="#3fb950" />
+  <text x="120" y="57" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="16" font-weight="700" fill="#f0883e">👻 GhostForensics Lab</text>
+  <text x="310" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#8b949e">|  Ghost Academy • Simulador DFIR</text>
+  
+  <!-- Global Search Bar Mockup -->
+  <rect x="620" y="34" width="320" height="36" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1" />
+  <text x="636" y="57" font-family="monospace" font-size="12" fill="#8b949e">🔍 Buscar IP, hash, EventID, PID... (Ctrl+K)</text>
+
+  <!-- Status badges -->
+  <rect x="960" y="37" width="90" height="30" rx="6" fill="#238636" fill-opacity="0.2" stroke="#238636" stroke-width="1" />
+  <text x="972" y="56" font-family="monospace" font-size="11" font-weight="600" fill="#3fb950">● ONLINE</text>
+  <rect x="1060" y="37" width="96" height="30" rx="6" fill="#f0883e" fill-opacity="0.15" stroke="#f0883e" stroke-width="1" />
+  <text x="1070" y="56" font-family="monospace" font-size="11" font-weight="600" fill="#f0883e">2026-03-14</text>
+
+  <!-- Main Hero Card: D3.js Focus + Context Timeline -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="96" width="1140" height="340" rx="12" fill="url(#cardGlow)" stroke="#30363d" stroke-width="1" />
+    
+    <!-- Timeline Card Header -->
+    <rect x="30" y="96" width="1140" height="44" rx="12" fill="#21262d" />
+    <text x="50" y="124" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#f0883e">⏱ SUPER-TIMELINE FORENSE INTERACTIVO (D3.js Focus + Context con Brushing &amp; Zooming)</text>
+    <rect x="880" y="105" width="130" height="26" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1" />
+    <text x="892" y="122" font-family="monospace" font-size="11" fill="#58a6ff">⇄ Sincronizar Tabla</text>
+    <rect x="1020" y="105" width="136" height="26" rx="6" fill="#f0883e" fill-opacity="0.2" stroke="#f0883e" stroke-width="1" />
+    <text x="1032" y="122" font-family="monospace" font-size="11" fill="#f0883e">📥 Exportar CSV/JSON</text>
+
+    <!-- Phase markers -->
+    <rect x="50" y="148" width="180" height="20" rx="4" fill="#f85149" fill-opacity="0.25" />
+    <text x="58" y="162" font-family="monospace" font-size="10" font-weight="600" fill="#f85149">FASE 1: FUERZA BRUTA RDP</text>
+
+    <rect x="240" y="148" width="220" height="20" rx="4" fill="#d29922" fill-opacity="0.25" />
+    <text x="248" y="162" font-family="monospace" font-size="10" font-weight="600" fill="#d29922">FASE 2: INFILTRACIÓN Y PERSISTENCIA</text>
+
+    <rect x="470" y="148" width="220" height="20" rx="4" fill="#f0883e" fill-opacity="0.25" />
+    <text x="478" y="162" font-family="monospace" font-size="10" font-weight="600" fill="#f0883e">FASE 3: INYECCIÓN LSASS Y BEACONING</text>
+
+    <rect x="700" y="148" width="200" height="20" rx="4" fill="#3fb950" fill-opacity="0.25" />
+    <text x="708" y="162" font-family="monospace" font-size="10" font-weight="600" fill="#3fb950">FASE 4: DNS TUNNELING EXFILTRACIÓN</text>
+
+    <rect x="910" y="148" width="244" height="20" rx="4" fill="#a371f7" fill-opacity="0.25" />
+    <text x="918" y="162" font-family="monospace" font-size="10" font-weight="600" fill="#a371f7">FASE 5: PIVOT NUBE CLOUDTRAIL</text>
+
+    <!-- Artifact Lanes (Focus View) -->
+    <g font-family="monospace" font-size="11" fill="#8b949e">
+      <text x="50" y="200">EVTX (Security)</text>
+      <line x1="170" y1="196" x2="1140" y2="196" stroke="#30363d" stroke-dasharray="4,4" />
+
+      <text x="50" y="235">Prefetch (.pf)</text>
+      <line x1="170" y1="231" x2="1140" y2="231" stroke="#30363d" stroke-dasharray="4,4" />
+
+      <text x="50" y="270">Registro Windows</text>
+      <line x1="170" y1="266" x2="1140" y2="266" stroke="#30363d" stroke-dasharray="4,4" />
+
+      <text x="50" y="305">MFT &amp; FS</text>
+      <line x1="170" y1="301" x2="1140" y2="301" stroke="#30363d" stroke-dasharray="4,4" />
+
+      <text x="50" y="340">Red &amp; C2 Beaconing</text>
+      <line x1="170" y1="336" x2="1140" y2="336" stroke="#30363d" stroke-dasharray="4,4" />
+    </g>
+
+    <!-- Interactive Event Dots with pulses -->
+    <!-- EVTX Events -->
+    <circle cx="90" cy="196" r="7" fill="#f85149" stroke="#fff" stroke-width="1.5" />
+    <circle cx="120" cy="196" r="7" fill="#f85149" stroke="#fff" stroke-width="1.5" />
+    <circle cx="190" cy="196" r="9" fill="#3fb950" stroke="#fff" stroke-width="2" />
+    <circle cx="340" cy="196" r="7" fill="#d29922" stroke="#fff" stroke-width="1.5" />
+    <circle cx="1110" cy="196" r="8" fill="#f85149" stroke="#fff" stroke-width="1.5" />
+
+    <!-- Prefetch Events -->
+    <circle cx="280" cy="231" r="7" fill="#58a6ff" stroke="#fff" stroke-width="1.5" />
+    <circle cx="510" cy="231" r="9" fill="#f0883e" stroke="#fff" stroke-width="2" />
+
+    <!-- Registry Events -->
+    <circle cx="380" cy="266" r="7" fill="#d29922" stroke="#fff" stroke-width="1.5" />
+    <circle cx="430" cy="266" r="7" fill="#a371f7" stroke="#fff" stroke-width="1.5" />
+
+    <!-- MFT Events -->
+    <circle cx="310" cy="301" r="7" fill="#58a6ff" stroke="#fff" stroke-width="1.5" />
+    <circle cx="480" cy="301" r="7" fill="#58a6ff" stroke="#fff" stroke-width="1.5" />
+
+    <!-- Network & C2 Events -->
+    <circle cx="560" cy="336" r="9" fill="#f85149" stroke="#fff" stroke-width="2" />
+    <circle cx="620" cy="336" r="6" fill="#f85149" stroke="#fff" stroke-width="1" />
+    <circle cx="680" cy="336" r="6" fill="#f85149" stroke="#fff" stroke-width="1" />
+    <circle cx="750" cy="336" r="8" fill="#3fb950" stroke="#fff" stroke-width="1.5" />
+    <circle cx="810" cy="336" r="8" fill="#3fb950" stroke="#fff" stroke-width="1.5" />
+    <circle cx="960" cy="336" r="8" fill="#a371f7" stroke="#fff" stroke-width="1.5" />
+
+    <!-- Focus Selected Node Callout -->
+    <rect x="470" y="174" width="220" height="42" rx="6" fill="#0d1117" stroke="#f0883e" stroke-width="1.5" />
+    <text x="480" y="192" font-family="monospace" font-size="11" font-weight="700" fill="#f0883e">02:18:22 UTC - Inyección VAD</text>
+    <text x="480" y="206" font-family="monospace" font-size="10" fill="#8b949e">lsass.exe (612) ← svc_update (4821)</text>
+
+    <!-- Context Mini-map with Brush Box -->
+    <rect x="50" y="370" width="1090" height="48" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1" />
+    <line x1="50" y1="394" x2="1140" y2="394" stroke="url(#timelineGrad)" stroke-width="3" />
+    <text x="60" y="386" font-family="monospace" font-size="9" fill="#8b949e">MINIMAPA DE NAVEGACIÓN GLOBAL (2026-03-14 02:01:44 - 02:31:05 UTC)</text>
+    
+    <!-- Draggable Brush Selection Window -->
+    <rect x="440" y="374" width="310" height="40" rx="4" fill="#f0883e" fill-opacity="0.25" stroke="#f0883e" stroke-width="1.5" stroke-dasharray="2,2" />
+    <rect x="436" y="384" width="6" height="20" rx="2" fill="#f0883e" />
+    <rect x="748" y="384" width="6" height="20" rx="2" fill="#f0883e" />
+    <text x="490" y="410" font-family="monospace" font-size="10" font-weight="700" fill="#f0883e">VENTANA ACTIVA: 02:14:00 - 02:24:00 (10m 00s)</text>
+  </g>
+
+  <!-- Bottom Row: 3 Feature Preview Cards -->
+  <!-- Card 1: Memory Volatility & Malfind -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="454" width="360" height="152" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
+    <rect x="30" y="454" width="360" height="32" rx="10" fill="#21262d" />
+    <text x="46" y="475" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#58a6ff">💻 MEMORIA RAM &amp; VOLATILITY3</text>
+    <text x="46" y="502" font-family="monospace" font-size="10" fill="#f85149">• windows.malfind: PID 612 lsass.exe</text>
+    <text x="46" y="518" font-family="monospace" font-size="10" fill="#d29922">• VAD RWX: 0x0000021a00400000</text>
+    <text x="46" y="534" font-family="monospace" font-size="10" fill="#3fb950">• YARA Match: mimikatz_sekurlsa_hook</text>
+    <text x="46" y="550" font-family="monospace" font-size="10" fill="#8b949e">• Proceso espurio: svc_update.exe (4821)</text>
+    <text x="46" y="580" font-family="monospace" font-size="10" fill="#58a6ff">→ Hexdump + x64 Disassembly Interactivo</text>
+  </g>
+
+  <!-- Card 2: Network C2 Beaconing & DNS Tunneling -->
+  <g filter="url(#shadow)">
+    <rect x="420" y="454" width="360" height="152" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
+    <rect x="420" y="454" width="360" height="32" rx="10" fill="#21262d" />
+    <text x="436" y="475" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#f0883e">📡 RED, BEACONING &amp; DNS TUNNEL</text>
+    <text x="436" y="502" font-family="monospace" font-size="10" fill="#f85149">• C2 Host: 203.0.113.44:4444 (TCP)</text>
+    <text x="436" y="518" font-family="monospace" font-size="10" fill="#f0883e">• Jitter 0% | Intervalo: Δt = 60.00 seg</text>
+    <text x="436" y="534" font-family="monospace" font-size="10" fill="#3fb950">• DNS TXT Tunneling: corp-data-exfil.net</text>
+    <text x="436" y="550" font-family="monospace" font-size="10" fill="#8b949e">• Base64 Payload decodificado con 1-clic</text>
+    <text x="436" y="580" font-family="monospace" font-size="10" fill="#f0883e">→ Exportable a PCAP/CSV/JSON</text>
+  </g>
+
+  <!-- Card 3: Forensic Glossary & Peritaje Formal -->
+  <g filter="url(#shadow)">
+    <rect x="810" y="454" width="360" height="152" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
+    <rect x="810" y="454" width="360" height="32" rx="10" fill="#21262d" />
+    <text x="826" y="475" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#3fb950">🎓 GLOSARIO &amp; INFORME PERICIAL</text>
+    <text x="826" y="502" font-family="monospace" font-size="10" fill="#58a6ff">• ForensicGlossary: MFT, EVTX, Amcache...</text>
+    <text x="826" y="518" font-family="monospace" font-size="10" fill="#a371f7">• Reto de Investigación: 8 preguntas guiadas</text>
+    <text x="826" y="534" font-family="monospace" font-size="10" fill="#3fb950">• Generador Dictamen Judicial (Módulo 20)</text>
+    <text x="826" y="550" font-family="monospace" font-size="10" fill="#8b949e">• Matriz MITRE ATT&amp;CK mapeada al caso</text>
+    <text x="826" y="580" font-family="monospace" font-size="10" fill="#3fb950">→ Descarga Informe Markdown / Imprimir PDF</text>
+  </g>
+</svg>

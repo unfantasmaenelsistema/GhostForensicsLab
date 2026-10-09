@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480" width="1000" height="480">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#161b22" />
+      <stop offset="100%" stop-color="#0d1117" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="480" fill="url(#bg)" rx="10" stroke="#30363d" stroke-width="1.5" />
+
+  <!-- Title bar -->
+  <rect x="0" y="0" width="1000" height="42" fill="#21262d" rx="10 10 0 0" />
+  <circle cx="24" cy="21" r="5" fill="#f85149" />
+  <circle cx="40" cy="21" r="5" fill="#d29922" />
+  <circle cx="56" cy="21" r="5" fill="#3fb950" />
+  <text x="80" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#a371f7">Glosario Forense Educativo (ForensicGlossary) y Búsqueda Global Omnipresente (Ctrl+K)</text>
+
+  <!-- Left: Global Search Modal Preview -->
+  <rect x="20" y="56" width="460" height="404" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1" />
+  <rect x="20" y="56" width="460" height="32" rx="8 8 0 0" fill="#21262d" />
+  <text x="36" y="77" font-family="monospace" font-size="11" font-weight="700" fill="#58a6ff">BUSCADOR GLOBAL UNIFICADO (Ctrl + K)</text>
+
+  <!-- Search input bar -->
+  <rect x="36" y="98" width="428" height="36" rx="6" fill="#161b22" stroke="#58a6ff" stroke-width="1.5" />
+  <text x="48" y="121" font-family="monospace" font-size="12" fill="#fff">🔍 203.0.113.44</text>
+  <rect x="390" y="104" width="64" height="24" rx="4" fill="#21262d" />
+  <text x="400" y="120" font-family="monospace" font-size="10" fill="#8b949e">6 res.</text>
+
+  <!-- Search Result Items -->
+  <g font-family="monospace" font-size="10">
+    <rect x="36" y="144" width="428" height="52" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+    <text x="48" y="162" font-weight="700" fill="#f85149">🔴 EVTX [Security 4624]</text>
+    <text x="48" y="178" fill="#8b949e">LogonType 10 (RDP) desde IpAddress: 203.0.113.44</text>
+    <text x="48" y="190" fill="#58a6ff">→ Clic para navegar al Visor EVTX</text>
+
+    <rect x="36" y="202" width="428" height="52" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+    <text x="48" y="220" font-weight="700" fill="#f0883e">📡 RED [Beaconing C2]</text>
+    <text x="48" y="236" fill="#8b949e">Conexión saliente TCP 203.0.113.44:4444 cada 60.0s</text>
+    <text x="48" y="248" fill="#58a6ff">→ Clic para navegar a Red &amp; C2</text>
+
+    <rect x="36" y="260" width="428" height="52" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+    <text x="48" y="278" font-weight="700" fill="#a371f7">☁️ AWS CloudTrail [GetObject]</text>
+    <text x="48" y="294" fill="#8b949e">sourceIPAddress: 203.0.113.44 descargando backup</text>
+    <text x="48" y="306" fill="#58a6ff">→ Clic para navegar a CloudTrail</text>
+
+    <rect x="36" y="318" width="428" height="52" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+    <text x="48" y="336" font-weight="700" fill="#3fb950">📚 Glosario Forense</text>
+    <text x="48" y="352" fill="#8b949e">Definición de "Beaconing C2" y técnicas de detección</text>
+    <text x="48" y="364" fill="#58a6ff">→ Clic para abrir término en Glosario</text>
+  </g>
+  <text x="48" y="440" font-family="monospace" font-size="10" fill="#8b949e">Indexación en vivo sobre 8 categorías forenses</text>
+
+  <!-- Right: ForensicGlossary Card -->
+  <rect x="500" y="56" width="480" height="404" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1" />
+  <rect x="500" y="56" width="480" height="32" rx="8 8 0 0" fill="#21262d" />
+  <text x="516" y="77" font-family="monospace" font-size="11" font-weight="700" fill="#a371f7">TÉRMINO: $MFT (Master File Table)</text>
+
+  <!-- Glossary terms chips -->
+  <g font-family="monospace" font-size="9" fill="#c9d1d9">
+    <rect x="516" y="96" width="56" height="20" rx="4" fill="#f0883e" fill-opacity="0.3" stroke="#f0883e" stroke-width="1" />
+    <text x="522" y="110" font-weight="700" fill="#f0883e">$MFT</text>
+
+    <rect x="578" y="96" width="56" height="20" rx="4" fill="#21262d" />
+    <text x="586" y="110">EVTX</text>
+
+    <rect x="640" y="96" width="76" height="20" rx="4" fill="#21262d" />
+    <text x="646" y="110">Amcache</text>
+
+    <rect x="722" y="96" width="76" height="20" rx="4" fill="#21262d" />
+    <text x="730" y="110">Prefetch</text>
+
+    <rect x="804" y="96" width="76" height="20" rx="4" fill="#21262d" />
+    <text x="812" y="110">Beaconing</text>
+
+    <rect x="886" y="96" width="80" height="20" rx="4" fill="#21262d" />
+    <text x="892" y="110">UserAssist</text>
+  </g>
+
+  <!-- Term content -->
+  <rect x="516" y="126" width="450" height="318" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  
+  <text x="530" y="150" font-family="monospace" font-size="11" font-weight="700" fill="#58a6ff">¿QUÉ ES Y DÓNDE SE ENCUENTRA?</text>
+  <text x="530" y="168" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#c9d1d9">Base de datos central del sistema de archivos NTFS donde cada archivo</text>
+  <text x="530" y="182" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#c9d1d9">o directorio ocupa al menos un registro de 1024 bytes (1 KB).</text>
+  <text x="530" y="196" font-family="monospace" font-size="10" fill="#d29922">Ubicación física: C:\$MFT (meta-archivo oculto de NTFS)</text>
+
+  <text x="530" y="222" font-family="monospace" font-size="11" font-weight="700" fill="#3fb950">MARCAS DE TIEMPO CLAVE (TIMESTOMPING):</text>
+  <text x="530" y="240" font-family="monospace" font-size="10" fill="#c9d1d9">• $STANDARD_INFORMATION (0x10): Modificable por API (SetFileTime)</text>
+  <text x="530" y="254" font-family="monospace" font-size="10" fill="#c9d1d9">• $FILE_NAME (0x30): Solo actualizable por el kernel de Windows</text>
+  <text x="530" y="268" font-family="monospace" font-size="10" fill="#f85149">⚡ Si SI &lt; FN en fecha, evidencia innegable de timestomping manual</text>
+
+  <text x="530" y="294" font-family="monospace" font-size="11" font-weight="700" fill="#f0883e">HERRAMIENTAS FOSS RECOMENDADAS:</text>
+  <text x="530" y="310" font-family="monospace" font-size="10" fill="#58a6ff">MFTECmd.exe (Eric Zimmerman) | AnalyzeMFT (Python) | fls / mactime</text>
+
+  <text x="530" y="336" font-family="monospace" font-size="11" font-weight="700" fill="#a371f7">APLICACIÓN AL CASO ACTUAL:</text>
+  <text x="530" y="354" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#c9d1d9">El atacante alteró las marcas de svc_update.exe a 2024-01-10 en SI,</text>
+  <text x="530" y="368" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#c9d1d9">pero el atributo FN preserva la creación real del 2026-03-14 02:08:19 UTC.</text>
+
+  <!-- Deep link button -->
+  <rect x="530" y="394" width="420" height="34" rx="6" fill="#f0883e" fill-opacity="0.2" stroke="#f0883e" stroke-width="1" />
+  <text x="590" y="415" font-family="monospace" font-size="11" font-weight="700" fill="#f0883e">🔍 Ver evento de timestomping en el Timeline</text>
+</svg>

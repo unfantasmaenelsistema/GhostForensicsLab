@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480" width="1000" height="480">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#161b22" />
+      <stop offset="100%" stop-color="#0d1117" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="480" fill="url(#bg)" rx="10" stroke="#30363d" stroke-width="1.5" />
+
+  <!-- Title bar -->
+  <rect x="0" y="0" width="1000" height="42" fill="#21262d" rx="10 10 0 0" />
+  <circle cx="24" cy="21" r="5" fill="#f85149" />
+  <circle cx="40" cy="21" r="5" fill="#d29922" />
+  <circle cx="56" cy="21" r="5" fill="#3fb950" />
+  <text x="80" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#f0883e">Análisis de Red: Detector de Beaconing C2 &amp; Decodificador de DNS Tunneling</text>
+
+  <!-- Left: Beaconing Detector -->
+  <rect x="20" y="56" width="460" height="404" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1" />
+  <rect x="20" y="56" width="460" height="32" rx="8 8 0 0" fill="#21262d" />
+  <text x="36" y="77" font-family="monospace" font-size="11" font-weight="700" fill="#f85149">DETECCIÓN DE BEACONING PERIÓDICO (C2)</text>
+
+  <!-- Metric badges -->
+  <g font-family="monospace" font-size="10">
+    <rect x="36" y="98" width="130" height="50" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+    <text x="46" y="116" fill="#8b949e">DESTINO C2</text>
+    <text x="46" y="136" font-size="11" font-weight="700" fill="#f85149">203.0.113.44:4444</text>
+
+    <rect x="176" y="98" width="130" height="50" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+    <text x="186" y="116" fill="#8b949e">DELTA TEMPORAL</text>
+    <text x="186" y="136" font-size="11" font-weight="700" fill="#f0883e">Δt = 60.00 seg</text>
+
+    <rect x="316" y="98" width="150" height="50" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+    <text x="326" y="116" fill="#8b949e">JITTER / VARIANZA</text>
+    <text x="326" y="136" font-size="11" font-weight="700" fill="#3fb950">0.00% (Cadencia exacta)</text>
+  </g>
+
+  <!-- Beacon intervals table -->
+  <rect x="36" y="158" width="430" height="230" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <text x="48" y="178" font-family="monospace" font-size="10" fill="#8b949e">TIMESTAMP UTC    PROCESO           BYTES    Δt INTERVALO</text>
+  <g font-family="monospace" font-size="10" fill="#c9d1d9">
+    <text x="48" y="202">02:20:00.120     svc_update (4821) 128 B    -- INICIO</text>
+    <text x="48" y="226">02:21:00.122     svc_update (4821) 128 B    <tspan fill="#f0883e">+60.002s ⚡</tspan></text>
+    <text x="48" y="250">02:22:00.119     svc_update (4821) 128 B    <tspan fill="#f0883e">+59.997s ⚡</tspan></text>
+    <text x="48" y="274">02:23:00.124     svc_update (4821) 128 B    <tspan fill="#f0883e">+60.005s ⚡</tspan></text>
+    <text x="48" y="298">02:24:00.121     svc_update (4821) 128 B    <tspan fill="#f0883e">+59.997s ⚡</tspan></text>
+    <text x="48" y="322">02:25:00.120     svc_update (4821) 128 B    <tspan fill="#f0883e">+59.999s ⚡</tspan></text>
+    <text x="48" y="346">02:26:00.123     svc_update (4821) 128 B    <tspan fill="#f0883e">+60.003s ⚡</tspan></text>
+    <text x="48" y="370">02:27:00.121     svc_update (4821) 128 B    <tspan fill="#f0883e">+59.998s ⚡</tspan></text>
+  </g>
+  <text x="48" y="408" font-family="monospace" font-size="10" fill="#f85149">Diagnóstico: Implant Meterpreter / Cobalt Strike con sleep 60</text>
+
+  <!-- Right: DNS Tunneling Inspector -->
+  <rect x="500" y="56" width="480" height="404" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1" />
+  <rect x="500" y="56" width="480" height="32" rx="8 8 0 0" fill="#21262d" />
+  <text x="516" y="77" font-family="monospace" font-size="11" font-weight="700" fill="#3fb950">EXFILTRACIÓN POR DNS TUNNELING (TXT QUERIES)</text>
+
+  <!-- Query details -->
+  <rect x="516" y="98" width="450" height="80" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <text x="528" y="118" font-family="monospace" font-size="10" fill="#8b949e">DOMINIO DE EXFILTRACIÓN:</text>
+  <text x="528" y="136" font-family="monospace" font-size="12" font-weight="700" fill="#58a6ff">*.corp-data-exfil.net (Entropía Shannon: 4.89)</text>
+  <text x="528" y="162" font-family="monospace" font-size="10" fill="#d29922">Tipo de registro: TXT | Servidor autorizado: 203.0.113.44</text>
+
+  <!-- Exfiltrated Chunks -->
+  <text x="516" y="198" font-family="monospace" font-size="11" font-weight="700" fill="#c9d1d9">PAQUETES INTERCEPTADOS:</text>
+  <rect x="516" y="208" width="450" height="110" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <g font-family="monospace" font-size="9" fill="#c9d1d9">
+    <text x="526" y="226"><tspan fill="#8b949e">Q1:</tspan> a1.d3Nzb2Z0LmNvbToxMDk4...corp-data-exfil.net</text>
+    <text x="526" y="244"><tspan fill="#8b949e">Q2:</tspan> a2.QWRtaW5pc3RyYXRvcjoh...corp-data-exfil.net</text>
+    <text x="526" y="262"><tspan fill="#8b949e">Q3:</tspan> a3.QUxJRU5fQ1BVOlZNV2Fy...corp-data-exfil.net</text>
+    <text x="526" y="280"><tspan fill="#8b949e">Q4:</tspan> a4.QUtJQUlaN1hWVU1QUjRR...corp-data-exfil.net</text>
+    <text x="526" y="298"><tspan fill="#8b949e">Q5:</tspan> a5.RVhGSUxUUkFUSU9OX0RP...corp-data-exfil.net</text>
+  </g>
+
+  <!-- Live Decoder Box -->
+  <rect x="516" y="328" width="450" height="116" rx="6" fill="#238636" fill-opacity="0.1" stroke="#238636" stroke-width="1" />
+  <text x="528" y="348" font-family="monospace" font-size="11" font-weight="700" fill="#3fb950">🔓 PAYLOAD BASE64 RECONSTRUIDO Y DECODIFICADO:</text>
+  <g font-family="monospace" font-size="10" fill="#58a6ff">
+    <text x="528" y="370">AWS_ACCESS_KEY_ID: <tspan fill="#fff" font-weight="700">AKIAIZ7XVUMPR4Q7SAMPLE</tspan></text>
+    <text x="528" y="388">AWS_SECRET_ACCESS_KEY: <tspan fill="#fff" font-weight="700">wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY</tspan></text>
+    <text x="528" y="406">AWS_DEFAULT_REGION: <tspan fill="#fff" font-weight="700">eu-west-1</tspan> (Bucket: internal-corp-db-backup)</text>
+    <text x="528" y="426" fill="#f85149">⚠️ Vector de pivote directo hacia AWS CloudTrail detectado</text>
+  </g>
+</svg>

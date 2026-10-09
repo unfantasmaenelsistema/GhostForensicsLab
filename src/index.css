@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-page: #0d1117;
+    --bg-card: #161b22;
+    --bg-subtle: #21262d;
+    --border-color: #30363d;
+    --text-primary: #e6edf3;
+    --text-muted: #8b949e;
+    --ghost-accent: #f0883e;
+    --ghost-accent-hover: #d2732e;
+    --ghost-accent-subtle: rgba(240, 136, 62, 0.15);
+  }
+
+  html.light {
+    --bg-page: #f6f8fa;
+    --bg-card: #ffffff;
+    --bg-subtle: #eaeef2;
+    --border-color: #d0d7de;
+    --text-primary: #1f2328;
+    --text-muted: #656d76;
+    --ghost-accent: #bc4c00;
+    --ghost-accent-hover: #9e3f00;
+    --ghost-accent-subtle: rgba(188, 76, 0, 0.12);
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+}
+
+/* Custom forensic scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #30363d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f0883e;
+}
+
+/* Print styles for official forensic judicial report */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #111827 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .report-page-break {
+    page-break-before: always;
+  }
+  .report-container {
+    box-shadow: none !important;
+    border: none !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+}
