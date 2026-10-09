@@ -163,33 +163,6 @@ npm run build
 npx gh-pages -d dist
 ```
 
----
-
-## 📤 Guía de Subida a GitHub (Paso a Paso)
-
-Si estás creando un repositorio nuevo en tu cuenta de GitHub, sigue estos sencillos comandos en tu terminal:
-
-```bash
-# 1. Inicializar git si aún no está inicializado
-git init
-
-# 2. Añadir todos los archivos al staging
-git add .
-
-# 3. Crear el commit inicial
-git commit -m "feat: initial commit of GhostForensics Lab with D3 timeline and full docs"
-
-# 4. Renombrar la rama principal a main
-git branch -M main
-
-# 5. Conectar con tu repositorio remoto de GitHub (sustituye tu usuario)
-git remote add origin https://github.com/TU-USUARIO/ghostforensics-lab.git
-
-# 6. Subir el proyecto
-git push -u origin main
-```
-
----
 
 ## 📂 Estructura del Proyecto
 
