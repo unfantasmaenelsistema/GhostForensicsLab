@@ -14,6 +14,9 @@
 [![D3.js](https://img.shields.io/badge/D3.js-7.9.0-F9A03C.svg?logo=d3.js)](https://d3js.org/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.x-38B2AC.svg?logo=tailwind-css)](https://tailwindcss.com/)
 [![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-Pages_Deploy-2088FF.svg?logo=github-actions)](https://github.com/features/actions)
+[![Demo en vivo](https://img.shields.io/badge/Demo_en_vivo-GitHub_Pages-success.svg?logo=github)](https://unfantasmaenelsistema.github.io/GhostForensicsLab/)
+
+### 🚀 [**Abrir GhostForensics Lab**](https://unfantasmaenelsistema.github.io/GhostForensicsLab/)
 
 <p align="center">
   <a href="#-vista-previa-del-laboratorio">Vista Previa</a> •
@@ -21,8 +24,6 @@
   <a href="#-módulos-y-capacidades-forenses">Módulos</a> •
   <a href="#-datos-del-caso-investigado">Caso Pericial</a> •
   <a href="#-inicio-rápido-en-local">Ejecución Local</a> •
-  <a href="#-publicación-en-github-pages-ci-cd">Despliegue GitHub Pages</a> •
-  <a href="#-guía-de-subida-a-github">Subida a GitHub</a> •
   <a href="#-enlaces-oficiales">Enlaces</a>
 </p>
 
@@ -112,31 +113,30 @@ Todos los artefactos, marcas de tiempo y entidades corresponden a un caso forens
 ## 💻 Inicio Rápido en Local
 
 ### Requisitos previos
-- **Node.js**: versión 18.0 o superior (recomendado Node.js 20 LTS).
-- **Gestor de paquetes**: npm, yarn, pnpm o bun.
+- **Bun**: versión 1.x o superior ([bun.sh](https://bun.sh)). El proyecto se instala y compila con Bun (`bun.lock` es el lockfile comprometido); `npm install` puede fallar por un conflicto de peer-dependencies entre `esbuild` y `vite` que Bun resuelve sin problema.
 
 ### Pasos de instalación
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/tu-usuario/ghostforensics-lab.git
-cd ghostforensics-lab
+git clone https://github.com/unfantasmaenelsistema/GhostForensicsLab.git
+cd GhostForensicsLab
 
 # 2. Instalar dependencias
-npm install
+bun install
 
 # 3. Iniciar el entorno de desarrollo
-npm run dev
+bun run dev
 ```
 
 Abre tu navegador en `http://localhost:3000` para comenzar a interactuar con el laboratorio.
 
 ### Comandos disponibles
 ```bash
-npm run dev        # Inicia el servidor de desarrollo Vite en el puerto 3000
-npm run build      # Compila la versión de producción optimizada en la carpeta dist/
-npm run preview    # Previsualiza la compilación localmente
-npm run lint       # Ejecuta la comprobación estricta de tipos de TypeScript (tsc --noEmit)
-npm run clean      # Limpia directorios de compilación residuales
+bun run dev        # Inicia el servidor de desarrollo Vite en el puerto 3000
+bun run build      # Compila la versión de producción optimizada en la carpeta dist/
+bun run preview    # Previsualiza la compilación localmente
+bun run lint       # Ejecuta la comprobación estricta de tipos de TypeScript (tsc --noEmit)
+bun run clean      # Limpia directorios de compilación residuales
 ```
 
 ---
@@ -200,6 +200,7 @@ ghostforensics-lab/
 
 ## 🔗 Enlaces Oficiales
 
+- 🚀 **Demo en vivo:** [GhostForensics Lab](https://unfantasmaenelsistema.github.io/GhostForensicsLab/)
 - 🌐 **Web Oficial:** [Un Fantasma en el Sistema](https://www.unfantasmaenelsistema.com/)
 - 🎓 **Plataforma del Curso:** [Ghost Academy](https://ghostacademy.unfantasmaenelsistema.com/)
 - 🛒 **Tienda de Ciberseguridad:** [Ghostore](https://www.ghostore.unfantasmaenelsistema.com/)
