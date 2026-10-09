@@ -141,29 +141,6 @@ npm run clean      # Limpia directorios de compilación residuales
 
 ---
 
-## 🚀 Publicación en GitHub Pages (CI / CD)
-
-GhostForensics Lab es una aplicación **100% estática (Client-Side SPA)**: no requiere base de datos ni backend en ejecución. Ya incluye un flujo de trabajo automatizado con **GitHub Actions** en `.github/workflows/deploy.yml`.
-
-### Opción 1: Despliegue Automático con GitHub Actions (Recomendada)
-1. Sube tu código a un repositorio de GitHub en la rama `main`.
-2. En GitHub, entra en tu repositorio y ve a **Settings** &rarr; **Pages**.
-3. En la sección **Build and deployment** &rarr; **Source**, selecciona **GitHub Actions**.
-4. ¡Listo! Cada vez que hagas `git push origin main`, GitHub Actions compilará la aplicación y la publicará automáticamente en:
-   ```
-   https://<tu-usuario>.github.io/ghostforensics-lab/
-   ```
-
-### Opción 2: Despliegue Manual con rama `gh-pages`
-```bash
-# 1. Compilar la aplicación para producción
-npm run build
-
-# 2. Desplegar el contenido de dist mediante gh-pages
-npx gh-pages -d dist
-```
-
-
 ## 📂 Estructura del Proyecto
 
 ```
